@@ -9,7 +9,7 @@ export default function Login() {
     const [password,setPassword]=useState('')
 
     const url="https://todoproject-api.vercel.app";
-    axios.defaults.withCredentials=true;
+   
     const handleSubmit=async(e)=>{
         e.preventDefault();
 
