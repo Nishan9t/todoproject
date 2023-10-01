@@ -9,7 +9,7 @@ const todoRoute = require('./routes/todoRoutes');
 const app= express();
 app.use(cors(
     {
-        origin:["https://todoproject-frontend.vercel.app"],
+        origin:"*",
         methods:["POST","GET","DELETE","PUT"],
         credentials:true
     }
