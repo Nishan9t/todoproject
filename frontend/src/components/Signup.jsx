@@ -7,7 +7,7 @@ import { toast } from 'react-toastify'
 export default function Signup() {
 
     const navigate=useNavigate()
-
+    axios.defaults.withCredentials=true;
     const url="https://todoproject-api.vercel.app";
     const [name,setName]=useState('')
     const [email,setEmail]=useState('')
