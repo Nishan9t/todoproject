@@ -8,7 +8,7 @@ export default function Signup() {
 
     const navigate=useNavigate()
 
-    const url="http://localhost:8000";
+    const url="todoproject-sigma.vercel.app";
     const [name,setName]=useState('')
     const [email,setEmail]=useState('')
     const [password,setPassword]=useState('')
