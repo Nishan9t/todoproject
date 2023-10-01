@@ -7,13 +7,13 @@ const todoRoute = require('./routes/todoRoutes');
 
 
 const app= express();
-app.use(cors(
-    {
-        origin:["https://todoproject-frontend.vercel.app"],
-        methods:["POST","GET","DELETE","PUT"],
-        credentials:true
-    }
-));
+app.use(cors());
+    // {
+    //     origin:["https://todoproject-frontend.vercel.app"],
+    //     methods:["POST","GET","DELETE","PUT"],
+    //     credentials:true
+    // }
+
 app.use(express.json())
 app.use(cookieParser())
 
