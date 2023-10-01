@@ -8,10 +8,12 @@ export default function Signup() {
 
     const navigate=useNavigate()
 
-    const url="todoproject-sigma.vercel.app";
+    const url="https://todoproject-api.vercel.app/";
     const [name,setName]=useState('')
     const [email,setEmail]=useState('')
     const [password,setPassword]=useState('')
+
+    axios.defaults.withCredentials=true;
 
     const handleSubmit=async(e)=>{
         e.preventDefault();
