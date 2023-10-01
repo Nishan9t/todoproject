@@ -8,7 +8,7 @@ export default function Login() {
     const [email,setEmail]=useState('')
     const [password,setPassword]=useState('')
 
-    const url="http://localhost:8000";
+    const url="todoproject-sigma.vercel.app";
 
     const handleSubmit=async(e)=>{
         e.preventDefault();
