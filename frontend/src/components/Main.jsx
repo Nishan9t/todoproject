@@ -8,7 +8,7 @@ import { toast } from 'react-toastify'
 export default function Main({user}) {
 
   const url="https://todoproject-api.vercel.app";
-  axios.defaults.withCredentials=true;
+  // axios.defaults.withCredentials=true;
   
   const navigate=useNavigate()
   const [title,setTitle]=useState()
