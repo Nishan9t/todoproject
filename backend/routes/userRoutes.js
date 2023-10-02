@@ -12,6 +12,7 @@ route.get("/hello",(req,res)=>{
 })
 
 route.post("/auth/signup",async(req,res)=>{
+    
     try{
         const {name,email,password}=req.body;
 
